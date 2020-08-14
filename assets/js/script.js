@@ -174,7 +174,7 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   password.reset();
-  debugger;
+
   passwordLength();
   passwordText.value = password.pw;
 
