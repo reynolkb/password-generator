@@ -109,8 +109,7 @@ var generatePassword = function () {
       var randomSpecial = randomNumber(1, special.length) - 1;
       password.pw += special[randomSpecial];
     }
-  }
-  else if (password.lowercase === true && password.uppercase === true && password.numeric === false && password.special === false) {
+  } else if (password.lowercase === true && password.uppercase === true && password.numeric === false && password.special === false) {
     for (var i = 0; i < password.charLength; i++) {
       var randomLowerUpper = randomNumber(1, lowerUpper.length) - 1;
       password.pw += lowerUpper[randomLowerUpper];
@@ -176,6 +175,7 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   password.reset();
+  debugger;
   passwordLength();
   passwordText.value = password.pw;
 
