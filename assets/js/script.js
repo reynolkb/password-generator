@@ -74,7 +74,6 @@ var findCharType = function () {
     password.special = true;
   } else {
     window.alert("Please enter in a correct character type.");
-    findCharType();
   }
 
   var moreChar = window.confirm("Do you include other character types?");
