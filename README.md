@@ -28,7 +28,7 @@ https://reynolkb.github.io/password-generator/
 
 Once you've downloaded the code open the zipped folder in an IDE. 
 
-![Alt text](./assets/css/img/screenshot.png)
+![screenshot of application](./assets/images/screenshot.png)
 
 
 ## Credits
