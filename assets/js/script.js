@@ -25,6 +25,7 @@ var numbersSpecial = [...numbers, ...special];
 // Combined Character Type Arrays
 var combined = [...alphabetLower, ...alphabetUpper, ...numbers, ...special];
 
+// object to store user's password choices
 var password = {
   charLength: 0,
   lowercase: false,
@@ -42,12 +43,14 @@ var password = {
   }
 }
 
+// generates a random number to randomly select the password characters based on the appropriate array.
 var randomNumber = function (min, max) {
   var value = Math.floor(Math.random() * (max - min + 1) + min);
 
   return value;
 }
 
+// sets the number of characters the user wants their password to be.
 var passwordLength = function () {
   var charLength = window.prompt('How many characters do you want your password to be? (8 - 24 characters)');
   password.charLength = parseInt(charLength);
@@ -60,6 +63,7 @@ var passwordLength = function () {
   }
 }
 
+// allows the user to pick the character types they want in the their password. then updates the object to reflect their choices.
 var findCharType = function () {
   var charType = window.prompt('What character types would you like to include in your password? (Type: "lowercase", "uppercase", "numeric", "special characters"');
   var charTypeValue = charType.toLowerCase();
@@ -87,6 +91,7 @@ var findCharType = function () {
   } else generatePassword();
 }
 
+// goes through all the different character type options the user can pick from and picks the array based on their choices.
 var generatePassword = function () {
   if (password.lowercase === true && password.uppercase === false && password.numeric === false && password.special === false) {
     for (var i = 0; i < password.charLength; i++) {
