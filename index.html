@@ -5,22 +5,32 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
   <title>Password Generator</title>
+
+  <!-- import style sheet -->
   <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
   <div class="wrapper">
+    <!-- header -->
     <header>
       <h1>Password Generator</h1>
     </header>
+
     <div class="card">
+      <!-- Card title -->
       <div class="card-header">
         <h2>Generate a Random Password</h2>
       </div>
+
+      <!-- Generate password output -->
       <div class="card-body">
         <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
       </div>
+
+      <!-- Generate password button -->
       <div class="card-footer">
         <button id="generate" class="btn">Generate Random Password</button>
       </div>
